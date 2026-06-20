@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/cankurucu/daily-canvas/main/public/logo.svg" width="96" height="96" alt="DailyCanvas Logo" />
+<img src="https://raw.githubusercontent.com/cankurucu/daily-canvas/main/public/logo.png" width="96" height="96" alt="DailyCanvas Logo" />
 
 # DailyCanvas
 
