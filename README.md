@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="https://raw.githubusercontent.com/cankurucu/daily-canvas/main/public/logo.svg" width="96" height="96" alt="DailyCanvas Logo" />
+
 # DailyCanvas
 
 **A free, open-source, local-first multiplayer canvas for Agile teams.**
