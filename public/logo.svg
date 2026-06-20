@@ -1,0 +1,41 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="256" height="256" rx="52" fill="#37003A"/>
+
+  <!-- Canvas frame -->
+  <rect x="36" y="44" width="184" height="128" rx="12" fill="white" fill-opacity="0.13" stroke="white" stroke-opacity="0.3" stroke-width="2"/>
+
+  <!-- Canvas surface (inner white area) -->
+  <rect x="48" y="56" width="160" height="104" rx="7" fill="white" fill-opacity="0.92"/>
+
+  <!-- Hand-drawn sketch line (chart/wave) — main illustration -->
+  <path d="M66 128 C76 108 86 122 96 110 C106 98 116 116 126 104 C136 92 146 112 162 96"
+        stroke="#37003A" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" fill="none"
+        opacity="0.85"/>
+
+  <!-- Sketch data point dots -->
+  <circle cx="96" cy="110" r="4" fill="#37003A" opacity="0.7"/>
+  <circle cx="126" cy="104" r="4" fill="#37003A" opacity="0.7"/>
+  <circle cx="162" cy="96" r="5" fill="#37003A" opacity="0.9"/>
+
+  <!-- Yellow sticky note -->
+  <rect x="146" y="110" width="46" height="36" rx="4" fill="#FDE68A"/>
+  <rect x="146" y="110" width="46" height="7" rx="4" fill="#FBBF24" fill-opacity="0.6"/>
+  <!-- Sticky note lines -->
+  <line x1="154" y1="124" x2="184" y2="124" stroke="#92400E" stroke-width="1.5" stroke-opacity="0.3" stroke-linecap="round"/>
+  <line x1="154" y1="132" x2="180" y2="132" stroke="#92400E" stroke-width="1.5" stroke-opacity="0.3" stroke-linecap="round"/>
+
+  <!-- Pencil / pen icon (bottom right of canvas) -->
+  <path d="M74 146 L78 136 L82 146 Z" fill="#6366F1" fill-opacity="0.25"/>
+
+  <!-- Calendar row at bottom (daily dots) -->
+  <g opacity="0.85">
+    <rect x="76" y="196" width="20" height="20" rx="5" fill="white" fill-opacity="0.15"/>
+    <rect x="102" y="196" width="20" height="20" rx="5" fill="white" fill-opacity="0.25"/>
+    <rect x="128" y="196" width="20" height="20" rx="5" fill="white" fill-opacity="0.9"/>
+    <rect x="154" y="196" width="20" height="20" rx="5" fill="white" fill-opacity="0.25"/>
+    <rect x="180" y="196" width="20" height="20" rx="5" fill="white" fill-opacity="0.15"/>
+    <!-- Active "today" dot -->
+    <circle cx="138" cy="206" r="3.5" fill="#6366F1"/>
+  </g>
+
+</svg>

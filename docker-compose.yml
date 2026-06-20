@@ -1,0 +1,41 @@
+services:
+
+  # ── Frontend (Vite → nginx) ─────────────────────────────────────────────────
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.app
+    ports:
+      - "80:80"
+    depends_on:
+      - server
+    restart: unless-stopped
+
+  # ── WebSocket + Admin server ────────────────────────────────────────────────
+  server:
+    build:
+      context: .
+      dockerfile: Dockerfile.server
+    env_file: .env
+    volumes:
+      - server-data:/app/data   # persistent file storage
+    restart: unless-stopped
+    # Port 1234 is NOT exposed externally — nginx handles all routing
+
+  # ── PostgreSQL (optional) ────────────────────────────────────────────────────
+  # Enable with:  docker compose --profile postgres up
+  # Also set in .env:  DATABASE_URL=postgres://postgres:postgres@db:5432/dailycanvas
+  db:
+    image: postgres:16-alpine
+    profiles: [postgres]
+    environment:
+      POSTGRES_DB:       dailycanvas
+      POSTGRES_USER:     postgres
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+volumes:
+  server-data:
+  db-data:

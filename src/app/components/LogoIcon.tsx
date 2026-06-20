@@ -1,0 +1,33 @@
+interface LogoIconProps {
+  size?: number;
+}
+
+export function LogoIcon({ size = 28 }: LogoIconProps) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="32" height="32" rx="7" fill="#37003A" />
+
+      {/* Canvas surface */}
+      <rect x="5" y="6" width="22" height="15" rx="2.5" fill="white" fillOpacity="0.92" />
+
+      {/* Hand-drawn sketch line */}
+      <path
+        d="M8 17 C10 13 12 15.5 14 13 C16 10.5 18 14 21 11.5"
+        stroke="#37003A"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        fill="none"
+      />
+
+      {/* Sticky note */}
+      <rect x="17" y="13" width="7" height="5" rx="0.8" fill="#FDE68A" />
+
+      {/* Calendar day dots — "daily" indicator */}
+      <circle cx="11" cy="27" r="1.5" fill="white" fillOpacity="0.45" />
+      <circle cx="16" cy="27" r="1.5" fill="white" fillOpacity="0.9" />
+      <circle cx="21" cy="27" r="1.5" fill="white" fillOpacity="0.45" />
+
+    </svg>
+  );
+}
