@@ -18,6 +18,12 @@ Built for daily standups, retrospectives, and refinement sessions — without th
 
 ---
 
+<div align="center">
+  <img src="public/screen-img/main.png" alt="DailyCanvas – Multiplayer Canvas Interface" width="100%" style="max-width: 800px; border-radius: 12px; box-shadow: 0 4px 24px rgba(0,0,0,.1); margin-bottom: 32px;" />
+</div>
+
+---
+
 ## Why DailyCanvas?
 
 Most collaborative whiteboard tools grow unbounded and get chaotic over time. DailyCanvas is different:
